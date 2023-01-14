@@ -1,0 +1,84 @@
+h1, h2 {
+    text-align: center;
+}
+
+#contenido {
+    margin-top: 40px;
+}
+.borrar-tweet,
+.borrar-tweet:hover {
+    float: right;
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+}
+
+.error {
+    background-color: red;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    max-width: 400px;
+    margin: 0 auto;
+    color: white;
+}
+
+.errorTransition {
+    animation: ocultarse 3s linear;
+}
+
+@keyframes ocultarse {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+/* Estilos de la caja de tweet */
+#lista-tweets{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.tweet {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 90% 10%;
+
+    background-color: #33C3F0;
+    border-radius: .25rem;
+}
+.tweet p, .tweet button {
+    margin: 0;
+    padding: 0;
+}
+.tweet p {
+    color: #fff;
+    font-weight: 600;
+    padding: .5rem 0 .5rem 1rem;
+    word-wrap: break-word;
+}
+.tweet button {
+    align-self: start;
+    border: none;
+    background-color: transparent;
+    background-image: url(../assets/cerrar.svg);
+    background-size: 2.8rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tweet-desaparecer {
+    overflow: hidden;
+    animation: desaparecerTweet 3s ease;
+}
+
+@keyframes desaparecerTweet {
+    from{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    to{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}

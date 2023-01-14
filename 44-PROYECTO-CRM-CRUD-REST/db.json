@@ -1,0 +1,11 @@
+{
+  "clientes": [
+    {
+      "nombre": "Renato Cristian Navarro Alberco",
+      "email": "devrenatonavarro@gmail.com",
+      "telefono": "934369928",
+      "empresa": "Desarrollo Web",
+      "id": 2
+    }
+  ]
+}
